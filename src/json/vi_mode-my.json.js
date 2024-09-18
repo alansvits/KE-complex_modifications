@@ -9,8 +9,8 @@ function main() {
         title: 'Vi Mode (rev 5)',
         rules: [
           {
-            description: 'Vi Mode [S as Trigger Key]',
-            manipulators: generateViMode('s'),
+            description: 'Vi Mode [ESC as Trigger Key]',
+            manipulators: generateViMode('escape'),
             // If you want to use other trigger keys for vi mode, just change this above line and run
             //
             // $ make
