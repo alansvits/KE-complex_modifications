@@ -6,11 +6,11 @@ function main() {
   console.log(
     JSON.stringify(
       {
-        title: 'Vi Mode (rev 5)',
+        title: 'Vi Mode (rev 5) my',
         rules: [
           {
-            description: 'Vi Mode [ESC as Trigger Key]',
-            manipulators: generateViMode('escape'),
+            description: 'Vi Mode [A as Trigger Key]',
+            manipulators: generateViMode('a'),
             // If you want to use other trigger keys for vi mode, just change this above line and run
             //
             // $ make
@@ -21,10 +21,10 @@ function main() {
             //
             // Modifier keys such as "command", "option" or "control" cannot be used here.
           },
-          {
-            description: 'Vi Mode [D as Trigger Key]',
-            manipulators: generateViMode('d'),
-          },
+          // {
+          //   description: 'Vi Mode [D as Trigger Key]',
+          //   manipulators: generateViMode('d'),
+          // },
           {
             description: 'Vi Visual Mode',
             manipulators: generateViVisualMode('v'),
